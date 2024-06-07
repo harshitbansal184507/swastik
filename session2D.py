@@ -15,8 +15,8 @@ print(menu)
 while True:
     item=input("enter tiems to add to cart or 0 to quit")
     
-    if item=="0"
-    break
+    if item=="0":
+       break
 
     qty=int(input("enter quantity of items"))
       quantity.append(qty)
