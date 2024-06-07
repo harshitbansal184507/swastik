@@ -1,6 +1,7 @@
 #add to cart
 cart=[]
 price=[]
+quantity=[]
 menu={"noodles":50,
       "burger":40,
       "momos":60,
@@ -17,4 +18,16 @@ while True:
     if item=="0"
     break
 
-    qty=input("enter ")
+    qty=int(input("enter quantity of items"))
+      quantity.append(qty)
+cart.append(item)
+price.append(menu[item]*qty)
+
+print("items in your cart are:")
+print(cart)
+print("QUANTITY")
+print(quantity)
+print("price is:")
+print(price)
+print("number of items in cart are :",len(cart))
+print("total amount to be paid is:",sum(price))
