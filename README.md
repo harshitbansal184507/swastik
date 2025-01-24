@@ -1,2 +1,1 @@
-# swastik
-my summer program
+# event mng sys
