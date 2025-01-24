@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+        }
+        body{
+            background: url("/static/Punjab-College-of-Technical-Education-PCTE.jpeg") no-repeat center center/cover;
+            filter: brightness(0.8);
+            display: flex;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.33); /* Dim effect */
+         }
+        main{
+           
+            height: 100vh;
+            width: 100vw;
+        }
+        .heading{
+            background:linear-gradient(to right,#c7d6f5be,#d4eef0c7);
+            border:2px solid black;
+            justify-content: center;
+            align-items: center;
+            border-radius:0.2rem;
+            padding:0.5rem;
+            display: flex;
+            width:40%;
+            margin-left:25rem;
+            margin-top:2rem;
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 100px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .logo img{
+            background:linear-gradient(to right ,#c7d6f59d,#d4eef0be);
+            border:2px solid black;
+            border-radius:1rem;
+            transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+                box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1); 
+        }
+        .buttons{
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            gap:10em;
+            position: relative;
+            margin:80px;
+            padding:0;
+        }
+        .buttons button{
+            background:linear-gradient(to right ,#c7d6f59d,#d4eef0be);
+            background-color:transparent;
+            font-family:Arial, Helvetica, sans-serif;
+            border:2px solid black;
+            padding:1rem;
+            text-align: center;
+            border-radius:1rem;
+            transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+                box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1); 
+        }
+        .buttons button:hover{
+            cursor:pointer;
+            transition:scale(1.1);
+            transform: scale(1.2); 
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); 
+        }
+        .buttons button:active{
+            transform: scale(1); 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+        }
+        @media screen and (max-width:768px){
+            .heading{
+                margin-left:0.5rem;
+                margin-right:0.5rem;
+                display:flex;
+                align-items:center;
+                width: auto;
+                padding:0.2rem;
+                border:2px solid black;
+                text-align: center;
+                border-radius:0.3rem;
+            }
+        }
+        @media screen and (max-width:468px){
+            .heading{
+                margin-left:0.5rem;
+                margin-right:0.5rem;
+                display:flex;
+                align-items:center;
+                width: auto;
+                padding:0.2rem;
+                border:2px solid black;
+                text-align: center;
+                border-radius:0.3rem;
+            
+            }
+            .buttons button{
+                width: 100px;
+                padding:0.2rem;
+                border:2px solid black;
+            text-align: center;
+            border-radius:0.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <main>
+        <div class="logo">
+            <img src="/static/logo.png" alt="Logo" />        </div>
+            <h1>                                            </h1>
+            <div class="heading">
+            <h2>PCTE Event Management System</h2></div>
+        <div class="buttons">
+           <a href="/user"> <button>Sign-in as <b>Users</b></button></a>
+           <a href="/admin"><button>Sign-in as <b>Admin</b></button></a>
+        </div>
+            
+    
+    </main>
+</body>
+</html>

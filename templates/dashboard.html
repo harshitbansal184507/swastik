@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        /*header styling*/
+        body{
+            background:linear-gradient(to right ,#80a8ff,#adfaff);
+
+        }
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    background:linear-gradient(to right ,#80a8ff,#adfaff);
+    box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.1);
+    width:100vw;
+    position:absolute;
+    top:0;
+    
+}
+
+/* Logo Styling */
+.logo img {
+    width: 120px; /* Adjust as needed */
+    height: auto;
+}
+
+/* Navigation Links */
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items:center;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+    padding:0.5rem;
+   position:relative;
+}
+
+.nav-links ul li a:hover {
+   text-decoration: underline;
+    
+}
+/*section1*/
+.section1{
+   
+    position:relative;
+}
+.section1>section>img{
+    position:absolute;
+    height:50vh;
+    width:auto;
+    left:48em;
+    top:15em;
+   
+}
+.text1{
+  position:absolute;
+  top:27em;
+  left:7em;
+  display:block;
+}
+.text1 h1{
+    color: black;
+    font-family: "Ubuntu", sans-serif;
+    font-weight:600;
+    font-size:2.2rem;
+}
+.text1 span{
+    color: #3e3e3e;
+}
+/*about*/
+#about{
+    background-color: #476dbe;
+    height:60vh;
+    width:100vw;
+    position:absolute;
+    top:45rem;
+    padding:5rem;
+  
+}
+#about img{
+    position:absolute;
+    height:40vh;
+    width:auto;
+    left:-10;
+}
+#about h1{
+    color:black;
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: "Ubuntu", sans-serif;
+    position:absolute;
+    top:-0.1rem;
+    left:35rem;
+   
+}
+#about span{
+    position:absolute;
+    left:40rem;
+    line-height:2rem;
+    color:white;
+    right:3rem;
+}
+/*section2*/
+.main-section2 h1{
+    color:black;
+    font-weight: 700;
+    font-size: 3rem;
+    font-family: "Ubuntu", sans-serif;
+    position:absolute;
+    top:45rem;
+    left:8rem;
+}
+.section2{
+    margin:100px 0 0 200px;
+    width:70%;
+    height:450px;
+    display:flex;
+    justify-content: space-evenly;
+    gap:10px;
+    position: absolute;
+    top:70rem;
+    
+}
+.section2 img{
+    width:10%;
+    height:100%;
+    object-fit:cover;
+    border-radius: 10px;
+    border:2px solid rgba(255,255,255,0.6);
+    transition:all ease-in-out 0.5s;
+}
+.section2 img:hover{
+    width:65%;
+}
+/*footer styling*/
+
+footer {
+    background-color: #476dbe;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    position:absolute;
+    top:30rem;
+    width: 100vw;
+    /* margin-top: 5%; */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    
+
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color:aliceblue;
+}
+.social-icons .icon{
+    color: aliceblue;
+}
+.social-icons{
+    font-size: 30px;
+}
+
+.footer-bottom {
+    /* margin-top: 20px; */
+    border-top: 1px solid #444;
+    /* padding-top: 10px; */
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+.carousel-item img {
+    width: 100%; /* Make the images responsive */
+    height: 400px; /* Set a fixed height for carousel images */
+    object-fit: cover;
+    display:flex;
+    flex-direction:row; /* Ensure the image fills its container without distortion */
+}
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+@media screen and(max-width:"468px"){
+    
+.about{
+    background-color: #476dbe;
+    height:60vh;
+    width:100vw;
+    position:absolute;
+    top:45rem;
+    padding:5rem;
+  
+}
+.about img{
+    position:absolute;
+    height:40vh;
+    width:auto;
+    left:-10;
+}
+/* Navigation Links */
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 0.2rem;
+    align-items:center;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color:black;
+    font-size: 10px;
+    padding:0.2rem;
+   position:relative;
+}
+
+.nav-links ul li a:hover {
+   text-decoration: underline;
+    
+}
+/*section1*/
+.section1{
+   
+    position:relative;
+}
+.section1 section img{
+    position:absolute;
+    height:30vh;
+    width:auto;
+    left:0em;
+    top:5em;
+   
+}
+
+}
+    
+
+</style>
+</head>
+<body>
+    <main>
+        <div id="box">
+            <header class="main-header">
+                <div class="logo">
+                    <img src="/static/logo.png" alt="Logo" />
+                </div>
+                <nav class="nav-links">
+                    <ul>
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="/eventmain">Events</a></li>
+                        <li><a href="/feed">Feedback</a></li>
+                        <li><a href="/venue">Venue</a></li>
+                        <li><a href="/profile"><i class="fa-solid fa-user"></i></a></li>
+                        <li><a href="/"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="section1">
+                <section>
+                    <div class="text1">
+                        <p>
+                            <h1>Plan <span style="color:#80a8ff">Events</span> Like Never Before</h1><br>
+                           <span> Evento simplifies the event management process,<br> bringing participants and organizers together on one intuitive platform.</span>
+                        </p>
+                    </div>
+                    <img src="/static/undraw_festivities_q090.svg" alt="illustration">
+
+                </section>
+            </div>
+            
+            <section id="about">
+                <div class="about">
+                <img src="/static/undraw_engineering-team_13ax.svg" alt="illustration">
+                </div>
+                <div>
+                    <p>
+                      
+                       <span>Welcome to Evento, your go-to event management platform designed exclusively for college events! From cultural fests to technical workshops, seminars, and sports meets, Evento simplifies the planning and organization process for students and organizers alike. Our platform streamlines event creation, participant registrations, and tracking, ensuring a hassle-free experience. With user-friendly features and seamless coordination, Evento brings your college community closer and makes every event memorable. Let's celebrate learning, creativity, and fun-all in one place with Evento!</span>
+                    </p>
+                </div>
+            </section>
+      
+               
+                <div class="section2">
+                   <h1>Upcoming Events:</h1>
+                    <div class="img">
+                        <img src="/static/event1.jpg" alt="event1">
+                        <img src="/static/event2.jpg" alt="event2">
+                        <img src="/static/event3.jpg" alt="event3">
+                        <img src="/static/img6.jpg" alt="event4">
+                       
+                </div>
+               
+                <footer>
+                    <div class="footer-container">
+                        <div class="footer-section ">
+                            <h2>About Us</h2>
+                            <p>Evento is your ultimate platform for managing college events effortlessly! From cultural fests to workshops and sports meets, we simplify event planning, registrations, and tracking. With user-friendly features and seamless coordination, Evento brings your college community together, making every event memorable. Let's celebrate creativity and fun with Evento!</p>
+                            <p>Designed & developed with all the love by TEAM 2</p>
+                        </div>
+                        <div class="footer-section links">
+                            <h2>Quick Links</h2>
+                            <ul>
+                                <li><a href="/home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="/eventmain">Events</a></li>
+                                <li><a href="#about">Contact</a></li>
+                                <!-- <li><a href="#">FAQs</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="footer-section contact">
+                            <h2>Contact Us</h2>
+                            <p>Email: team2@gmail.com</p>
+                            <p>Phone: +91 0000000000</p>
+                            <p>Address: LocalHost</p>
+                        </div>
+                        <div class="footer-section social">
+                            <h2>Follow Us</h2>
+                            <div class="social-icons">
+                                <a href="https://www.instagram.com/pcte.official/"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/school/pcte-ludhiana/posts/?feedView=all"><i class="bi bi-linkedin icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2025  TEAM 2. All rights reserved.</p>
+                    </div>
+                </footer>
+            </div>
+        
+    </main>
+</body>
+</html>
