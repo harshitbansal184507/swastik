@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="admin.css">
+
+<style>
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(to right ,#adfaff,#80a8ff);
+}
+#box {
+    font-family: Arial, sans-serif;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Form Container */
+form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 22px 22px 22px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Form Heading */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color:black;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    font-family: 'Playwrite NG Modern', cursive;
+    margin-top:10rem;
+}
+
+/* Input Fields */
+form input[type="email"],
+form input[type="text"],
+form input[type="contact"],
+form input[type="password"] ,textarea{
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form input[type="text"]:focus,
+form input[type="contact"] {
+    border-color: #0051ff;
+    box-shadow: 0 0 8px rgba(44, 37, 125, 0.3);
+    outline: none;
+}
+
+/* Button Styling */
+form button {
+    background:linear-gradient(to right ,#80a8ff,#adfaff);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px #093cab;
+}
+
+/* Image Preview */
+img {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+form>p>a{
+    text-decoration:none;
+    font-weight: 100;
+    transition:transform 0.3s ease;
+}
+form>p>a:hover{
+    transform: scale(1.05);
+}
+form>p>a:active{
+    color:black;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    form {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    form button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+</style></head>
+<body>
+   
+    <div id="box">  
+    <div class="login-nav"></div>
+    <h1>Ready to make your events shine? Sign up and let's do this together!</h1>
+    <form action="/add-admin" method="post">
+        <div class="mb-3 mt-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+        </div>
+
+        <div class="mb-3 mt-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+        </div>
+        <div class="mb-3">
+          <label for="pwd" class="form-label">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter Password" name="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+      </form>
+
+      <a href="/admin">Exisiting User? Login Here</a>
+
+    </div>
+</body>
+</html>
